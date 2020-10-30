@@ -22,7 +22,4 @@ test:
 
 production:
   <<: *default
-  adapter: postgresql
-  username: <%= ENV['RAILS.GRAPE.REACT.SAMPLE.APP_PRODUCTION_USERNAME'] %>
-  password: <%= ENV['RAILS.GRAPE.REACT.SAMPLE.APP_PRODUCTION_PASSWORD'] %>
-  host: <%= ENV['RAILS.GRAPE.REACT.SAMPLE.APP_PRODUCTION_HOST'] %>
+  database: db/production.sqlite3
